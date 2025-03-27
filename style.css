@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+
+body{
+    background: rgb(38, 18, 18);
+}
+.stopwatch{
+max-width: 600px;
+text-align: center;
+padding: 40px 0;
+color: #fff;
+margin: 200px auto 0;
+}
+.stopwatch .border {
+    border-radius: 10px;
+    border: 5px solid rgb(175, 124, 47);
+    position: relative; 
+}
+
+.stopwatch .border::after {
+    content: "";
+    width: 200px;
+    height: 20px;
+    background-color: rgb(175, 124, 47);
+    position: absolute;
+    top: -20px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.stopwatch h1{
+    font-size: 64px;
+    font-family: "Big Shoulders Stencil", sans-serif;
+
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons img{
+    width: 50px;
+    max-width: 0 20px;
+    cursor: pointer;
+    padding: 20px;
+}
+.buttons img:nth-child(2){
+    width: 80px;
+}
